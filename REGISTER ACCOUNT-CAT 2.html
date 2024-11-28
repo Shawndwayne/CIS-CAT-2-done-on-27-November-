@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="eng"></html>
+<head>
+    <meta charset="UTF=8">
+    <meta name="viewport"content="width=device-width,initial scale 1.0">
+    <title>Account Registration</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        body{
+            font-size: larger;
+           
+        }
+        .error{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Register Account</h1>
+    
+    <form>
+       <label for="full name">Full Name:</label>
+       <input type="text" id="full name" name="full name" minlength="4"required>
+       <span class="error">Username must be atleast 4 characters</span><br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" minlength="4"required>
+        <span class="error ">Password must be atleast 4 characters</span><br><br>
+        <label for="confirm password">Confirm password</label>
+             <input type="password" id="password" name="confirm password" minlength="4"required>
+             <span class="error"> Password must match</span><br><br>
+            <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error">Invalid email format</span>    
+        <p>Format:john@gmail.com</p>
+        <label for="phone number">Phone number</label>
+        <input type="tel" id="phone number" name="phone number" required>
+        <span class="error">Format:xxxx-xxx-xxx</span><br><br>
+        <P>Format:0xxxx-xxx-xxx</P>
+        <label for="zip code">Zip-code:</label>
+        <input type="text" id="zip code" name="zip code" required>
+        <span class="error">Use 5 or 9 digits zip code</span><br><br>
+        <P>Format:use 5 or 9 digit zip code</P>
+        <label for="card type" id="card type" name="card type" required></label>
+        <select>
+            <option value="visa">Visa</option>
+            <option value="Prepaid">Prepaid</option>
+            <option value="postpaid">Postpaid</option>
+        </select>
+        <span class="error">Invalid card format</span>
+        <p>Format:1111-2222-3333-4444</p>
+        <label for="expiry date">Expiry date</label>
+            <input type="date"id="expiry date" name="expiry date" required>
+            <span class="error">Format:yyyy-mm-dd</span>
+        </label>
+        <p>Format:YYYY-MM-DD</p>
+        </form>
+    </form>
+    <button>Register</button> <button>Clear form</button>
+</body>
+</html>

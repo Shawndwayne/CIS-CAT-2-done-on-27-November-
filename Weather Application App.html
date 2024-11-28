@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather-App</title>
+        <link rel="stylesheet"href="style.css">
+        <style>
+            body{
+                font-family: arial,sans-serif;
+                background: color rgb(117, 112, 112);
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .weather-container{
+                width:700px;
+                margin: 0 auto;
+                background-color: #a8ad8b;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+            }
+            .header{
+                text-align: center;
+                margin-bottom: 20px;
+                text-decoration-color: #580688;
+                font-size:1,5rem;
+                font-weight: bold;
+                color: rgba(53, 65, 2, 0.911);
+                margin-bottom: 20px;
+            
+            }
+            .search-bar{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+            .search-bar input{
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .search-bar button{
+                padding: 10px 20px;
+                background-color: #580688;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            .city-name{
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 10px;
+                text-decoration-color: #580688;
+            }
+            .temperature{
+                font-size: 4rem;
+                font-weight: bold;
+                margin-bottom: 10px;
+                align-items: flex-end;
+                color: black;
+                text-align: left;
+            }
+            .current-weather{
+                font-size: 16px;
+                margin-bottom: 10px;
+                text-decoration-color: #580688;
+            }
+            .forecast{
+                display:flex;
+                justify-content: space-between;
+            }
+            .forecast.day,.forecast.icon,.forecast.temp{
+                text-align: center;
+            }
+            .h1{
+                text-decoration-color: rgb(72, 73, 14);
+            }
+            footer{
+                text-align: center;
+            }
+            .class-temp{
+                justify-content: end;
+            }
+            .temperature sup{
+                font-size: 1rem;
+                vertical-align: top;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1><u>Welcome to our weather Application</u></h1>
+            </div>
+            <div class="search-bar">
+                <input type="text"placeholder="Enter a city name">
+                <button>SEARCH</button>
+            </div>
+            <div class="weather-info">
+                <div class="city-name">Paris</div>
+                <div class="Temperature">12&#8304;;</div>
+                <div class="current-weather">Tuesday 14:20,scattered clouds</div>
+                <div class="current weather">Humidity:66, wind-speed:4.3</div>
+                <table width="400" cellpadding="10" cellspacing="5">
+                    <th>
+                        <tr><th>Mon</th><th>Tue</th><th>Wed</th><th>Thur</th><th>Fri</th><th>Sat</th><th>Sun</th></tr>
+                         
+                    </th>
+                   <tr><td>⛅</td><td>⛅</td><td>⛅</td><td>⛅</td><td>⛅</td><td>⛅</td><td>⛅</td></tr> 
+                    <tr><td>15&#8304;C 19&#8304;C</td><td>15&#8304;C 19&#8304;C</td><td>15&#8304;C 19&#8304;C</td><td>15&#8304;C 19&#8304;C</td><td>15&#8304;C 19&#8304;C</td><td>15&#8304;C 19&#8304;C</td><td>15&#8304;C 19&#8304;C</td></tr>
+                </table>
+                <footer>
+                    <P>Coded by <u><b>Shawn Dwayne</b></u> and is on <u><b>GitHub</b></u> and hosted by <U><b>Netlify</b></U></P>
+                    <p>The design was done using figma</p>
+                </footer> 
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
